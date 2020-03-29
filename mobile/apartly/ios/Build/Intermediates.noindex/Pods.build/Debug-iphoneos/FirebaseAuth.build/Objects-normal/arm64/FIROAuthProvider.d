@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/OAuth/FIROAuthProvider.m \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseAuth.build/module.modulemap \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFederatedAuthProvider.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthUIDelegate.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIROptions.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRLoggerLevel.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRConfiguration.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRApp.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthBackend.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuth_Internal.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthErrorUtils.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthGlobalWorkQueue.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/OAuth/FIROAuthCredential_Internal.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthCredential.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthURLPresenter.h
