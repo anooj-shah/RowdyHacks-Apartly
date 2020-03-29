@@ -1,8 +1,6 @@
 import json
 from zoomus import ZoomClient
 from datetime import datetime
-import zoomus.util
-import os
 def setup():
     client = ZoomClient("ughCBh93TRyPCf9Xzkoy3Q","jgngXqwIQQw5gvYOEiEXLKAn4vP51byGIj1R", version=1)
 
