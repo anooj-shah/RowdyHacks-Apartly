@@ -2,8 +2,10 @@
 
 
 
+import 'package:apartly/frontend/explore_page.dart';
 import 'package:apartly/frontend/home_page.dart';
 import 'package:apartly/frontend/login_page.dart';
+import 'package:apartly/frontend/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:apartly/utilities/constants.dart';
 
@@ -23,6 +25,10 @@ class MyApp extends StatelessWidget {
 //        '/ReportPage': (context) => ChangeNotifierProvider(
 //            create: (context) => FormInfo(), child: ReportPage()),
         '/HomePage': (context) => new MyHome(),
+        '/ExplorePage': (context) => new ExplorePage(),
+        '/ProfilePage': (context) => new ProfilePage(),
+
+
       },
       theme: ThemeData(
         primaryColor: Constants.themePurple,

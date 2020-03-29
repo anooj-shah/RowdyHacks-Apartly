@@ -41,6 +41,8 @@ class MyHome extends StatelessWidget {
               ],
             ),
             bottomNavigationBar: ConvexAppBar(
+              initialActiveIndex: 0,
+
               onTap: (ind) {
                 switch (ind) {
                   case 0:
@@ -49,26 +51,26 @@ class MyHome extends StatelessWidget {
                         : print('cant push');
                     break;
                   case 1:
-                    Navigator.of(context).pushNamed('/ReportPage');
+                    Navigator.of(context).pushNamed('/ExplorePage');
                     break;
                   case 2:
                     //Navigator.of(context).canPop()
-                    Navigator.of(context).pushNamed('/ReportList');
+                    Navigator.of(context).pushNamed('/ProfilePage');
                     // : print('cant push');
                     break;
                 }
               },
               items: tabs,
               backgroundColor: Constants.themePurple,
-              style: TabStyle.fixedCircle,
+              style: TabStyle.reactCircle,
             ),
 //          appBar: AppBar(
 //          ),
 
-            body: new GridView.builder(
+            body: new ListView.builder(
                 itemCount: 100,
-                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 1),
+//                l: new SliverGridDelegateWithFixedCrossAxisCount(
+//                    crossAxisCount: 1),
                 itemBuilder: (BuildContext context, int index) {
                   return EventCard();
                 })),
