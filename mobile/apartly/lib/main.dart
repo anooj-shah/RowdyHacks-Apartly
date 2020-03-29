@@ -3,6 +3,7 @@
 
 
 import 'package:apartly/frontend/home_page.dart';
+import 'package:apartly/frontend/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:apartly/utilities/constants.dart';
 
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.red[600],
       ),
-      home: MyHome(),
+      // TODO: Add boolean using shared pref package to only show login once
+      home: LoginPage(),
     );
   }
 }
