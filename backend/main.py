@@ -50,18 +50,18 @@ def subscribe():
     return "success"
 
 
-@app.route('/list_tags', methods=['GET'])
-def list_tags():
-    # meetings_arr = (list(meetings.find()))
-    tags={}
-    for i in meetings.find():
-        for j in i['tags']:
-            if j in tags:
-                tags[j].append(i)
-            else:
-                tags[j] = [i]
-    print(tags)
-    return dumps(meetings_arr)
+# @app.route('/list_tags', methods=['GET'])
+# def list_tags():
+#     # meetings_arr = (list(meetings.find()))
+#     tags={}
+#     for i in meetings.find():
+#         for j in i['tags']:
+#             if j in tags:
+#                 tags[j].append(i)
+#             else:
+#                 tags[j] = [i]
+#     print(tags)
+#     return tags
 
 @app.route('/list_meetings', methods=['GET'])
 def list_meetings():
