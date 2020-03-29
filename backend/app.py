@@ -63,10 +63,16 @@ def subscribe():
 #     print(tags)
 #     return tags
 
+@app.route('/list_meetings1')
+def list_meetings():
+    meetings_arr = jsonify(list(meetings.find()))
+    print(meetings_arr)
+    return meetings_arr
+
 @app.route('/list_meetings', methods=['GET'])
 def list_meetings():
     meetings_arr = dumps(list(meetings.find()))
-
+    print(meetings_arr)
     return meetings_arr
 
 # @app.route('/join_meeting', methods=['GET'])
