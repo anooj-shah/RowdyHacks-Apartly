@@ -1,18 +1,17 @@
-{% include 'header.html' %}
 <nav class="fh5co-nav" role="navigation">
     <div class="container-fluid">
         <div class="top-menu">
             <div class="row">
                 <div class="col-xs-3">
-                    <div id="fh5co-logo"><a href="/">APARTLY</a></div>
+                    <div id="fh5co-logo" style="font-family: 'Pacifico', cursive;"><a href="/">APARTLY</a></div>
                 </div>
                 <div class="col-xs-9 text-right menu-1">
                     <ul>
-                        <li class="{{ 'active' if active_page == 'login' else 'hidden' }}"><a href="login">Login</a></li>
-                        <li class="{{ 'active' if active_page == 'explore' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="explore">Explore</a></li>
-                        <li class="{{ 'active' if active_page == 'create' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="create">Schedule</a>
+                        <li class="{{ 'active' if active_page == 'explore' else '' }}"><a href="explore">Explore</a></li>
+                        <li class="{{ 'active' if active_page == 'create' else '' }}"><a href="create">Create</a></li>
+                        <li class="{{ 'active' if active_page == 'schedule' else '' }}"><a href="schedule">Schedule</a>
                         </li>
-                        <li class="{{ 'active' if active_page == 'about' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="about">Profile</a></li>
+                        <li class="{{ 'active' if active_page == 'profile' else '' }}"><a href="profile">Profile</a></li>
                     </ul>
                 </div>
             </div>
