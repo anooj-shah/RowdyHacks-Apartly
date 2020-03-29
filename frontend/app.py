@@ -10,6 +10,14 @@ def home():
 def explore():
     return render_template('explore.html')
 
-@app.route('/temp')
-def temp():
-    return render_template('temp.html')
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
+
+@app.route('/meeting')
+def meeting():
+    return render_template('meeting.html')
+
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
