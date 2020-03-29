@@ -6,6 +6,7 @@
     <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="{{ url_for('static', filename='login/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
 
@@ -19,29 +20,29 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div style="width: 100%; text-align: center; padding-bottom: 30px;">
-                    <h1 style="font-size: 75px;">Apartly</h1>
+                    <h1 style="font-size: 75px; font-family: 'Pacifico', cursive;">Apartly</h1>
                 </div>
-                <div class="login100-pic js-tilt" data-tilt>
-                    <img src="{{ url_for('static', filename='login/images/img-01.png') }}" alt="IMG">
+                <div class="login100-pic js-tilt" data-tilt style="padding-top: 30px;">
+                    <img src="https://www.freepnglogos.com/uploads/logo-home-png/house-logo-design-vector-real-estate-logo-photos-25.png" alt="IMG">
                 </div>
                 <form class="login100-form validate-form">
                     <span class="login100-form-title">
-                        Member Login
+                        Login
                     </span>
 
-                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email">
+                    <div class="wrap-input100">
+                        <input class="input100" type="text" name="email" placeholder="What's your name?">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </span>
                     </div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
+                    <div class="wrap-input100 validate-input" data-validate="Account id is required">
+                        <input class="input100" type="password" name="pass" placeholder="Account id">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                         </span>
                     </div>
 
