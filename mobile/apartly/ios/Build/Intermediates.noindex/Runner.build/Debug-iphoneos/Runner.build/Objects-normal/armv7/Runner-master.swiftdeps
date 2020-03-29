@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "55c0cc8b2a0682052016f83c79b61141"
+build_time: [1585442709, 138890000]
+inputs:
+  "/Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Runner/AppDelegate.swift": [1585439023, 726290891]

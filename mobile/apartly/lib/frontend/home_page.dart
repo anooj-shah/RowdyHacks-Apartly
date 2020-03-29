@@ -24,6 +24,11 @@ class MyHome extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: Text('Apartly'),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search, color: Colors.white,),
+              )
+            ],
 
           ),
           bottomNavigationBar: ConvexAppBar(
