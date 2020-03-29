@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1080" />
+    <option name="height" value="1920" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+</project>
