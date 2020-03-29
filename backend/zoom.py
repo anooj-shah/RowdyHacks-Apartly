@@ -4,7 +4,7 @@ from datetime import datetime
 import zoomus.util
 import os
 def setup():
-    client = ZoomClient(os.environ.get('ZOOM_ID'), os.environ.get('ZOOM_KEY'), version=1)
+    client = ZoomClient("ughCBh93TRyPCf9Xzkoy3Q","jgngXqwIQQw5gvYOEiEXLKAn4vP51byGIj1R", version=1)
 
     user_list_response = client.user.list()
     user_list = json.loads(user_list_response.content)

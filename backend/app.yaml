@@ -11,3 +11,7 @@ handlers:
   # the entire handlers section) when there are no static files defined.
 - url: /.*
   script: auto
+
+env_variables:
+    ZOOM_ID: 'ughCBh93TRyPCf9Xzkoy3Q'
+    ZOOM_KEY: 'jgngXqwIQQw5gvYOEiEXLKAn4vP51byGIj1R'
