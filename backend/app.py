@@ -3,13 +3,14 @@
 # export FLASK_ENV=development
 # flask run
 import pymongo
-from flask import Flask
+from flask import Flask, request, abort, jsonify
 from pymongo import MongoClient
 import requests
+from datetime import datetime
+from zoom import zoom_create_meeting, zoom_list_meetings
 
 
 client = pymongo.MongoClient('mongodb+srv://anooj101:rowdyhacks@cluster0-v8p0t.gcp.mongodb.net/test?retryWrites=true&w=majority')
-
 # database
 db = client['rowdyhacks']
 
@@ -19,22 +20,6 @@ users = db['users']
 
 app = Flask(__name__)
 
-def get_zoom_id():
-    response = requests.get(
-        'https://api.github.com/search/repositories',
-        params={'q': 'requests+language:python'},
-        headers={'Accept': 'application/vnd.github.v3.text-match+json'},
-    )
-
-    # View the new `text-matches` array which provides information
-    # about your search term within the results
-    json_response = response.json()
-    repository = json_response['items'][0]
-    print(f'Text matches: {repository["text_matches"]}')
-    return 1
-# @app.route('/view/<variable>/')
-# def view(variable):
-#     pass
 @app.route('/join_meeting', methods=['GET'])
 def join_meeting():
     meeting_name='PyMongo is fun, you guys'
@@ -50,32 +35,31 @@ def join_meeting():
 
 @app.route('/create_meeting', methods=['GET'])
 def create_meeting():
-    #meeting_name, host_name, description, time, tags
-    # id = get_zoom_id()
+    # headers = {'meeting_name':'value', 'host_name':'sdf', 'tags' :'', 'description' : "sadf"}
+    print("h1")
+    response = request.get_json()
+    # response = request.headers
     # get geolocation
+    meeting_name = response['meeting_name']
+    host_name = response['host_name']
+    tags = response['tags'] # list of tags
+    description = response['description']
+    time = datetime.now()
+    print("h2")
     meeting = {
-        'zoom_id': 2,
-        'meeting_name': 'meeting 2',
-        'tags': ["Fun", "Reading"],
-        'time':"10:34",
-        'host_name': "John",
-        'description': "description",
+        'zoom_id': zoom_create_meeting(meeting_name, time),
+        'meeting_name': meeting_name,
+        'tags': tags,
+        'time': time,
+        'host_name': host_name,
+        'description': description,
         'geolocation_lat':0,
         'geolocation_long':0
     }
+    print("h3")
     result = meetings.insert_one(meeting)
-
     print('One meeting scheduled: {0}'.format(result.inserted_id))
     return "<h1>Hello</h1>"
-
-# @app.route('/zoom_meeting', methods=[]
-# def home():
-#     return ''
-#
-# @app.route('/zoom_meeting', methods=[])
-# def home():
-#     return ''
-
 
 # @app.route('/createcm')
 # def createcm():
