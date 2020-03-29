@@ -69,7 +69,7 @@ def list_meetings():
     return jsonify(results = meetings_arr)
 
 @app.route('/list_meetings', methods=['GET'])
-def list_meetings():
+def list_meetings1():
     meetings_arr = dumps(list(meetings.find()))
     print(meetings_arr)
     return meetings_arr
