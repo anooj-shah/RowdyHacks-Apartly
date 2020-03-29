@@ -23,6 +23,11 @@ users = db['users']
 
 app = Flask(__name__)
 
+
+@app.route('/', methods=['GET'])
+def home():
+    return "<h1>Hello</h1>"
+
 @app.route('/add_user', methods=['POST'])
 def add_user():
     response = request.get_json()
@@ -103,3 +108,5 @@ def create_meeting():
     print('One meeting scheduled: {0}'.format(result.inserted_id))
     return "<h1>Hello</h1>"
 # list_tags()
+if __name__ == __'main'__:
+    app.run(host='127.0.0.1', port=8080, debug=True)
