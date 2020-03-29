@@ -4,7 +4,11 @@
 <head>
 
 	{% include 'header.html' %}
-
+  <style>
+    .better-hover a:hover {
+      color: white !important;
+    }
+  </style>
 </head>
 <body>
     {% include 'navbar.html' %}
@@ -22,8 +26,10 @@
                 </p>
                 <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
                 <br>
-                <a href="#" class="mt-auto btn btn-primary  ">Join The Meeting</a>
-                <a href="#" class="mt-auto btn btn-primary  ">Subscribe</a>
+                <div class="better-hover">
+                  <a href="#" class="mt-auto btn btn-primary lol ">Join The Meeting</a>
+                  <a href="#" class="mt-auto btn btn-primary  lol ">Subscribe</a>
+                </div>
               </div>
             </div>
             <!-- Carousel start -->

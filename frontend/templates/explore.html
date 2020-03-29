@@ -12,44 +12,91 @@
 
         {% include 'header.html' %}
         {% set active_page = "explore" %}
+        <style>
+           
+            form.example input[type=text] {
+              padding: 10px;
+              font-size: 17px;
+              border: 1px solid grey;
+              float: left;
+              width: 80%;
+              background: #f1f1f1;
+            }
+            
+            form.example button {
+              float: left;
+              width: 20%;
+              padding: 10px;
+              background: #81c784;
+              color: white;
+              font-size: 17px;
+              border: 0.5px solid grey;
+              border-left: none;
+              cursor: pointer;
+            }
+            
+            form.example button:hover {
+              background: #ba68c8;
+            }
+            
+            form.example::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            </style>
 
     </head>
     <body>
         {% include 'navbar.html' %}
-        
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;">
+            <form class="example" action="/">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+        </div>
+
         <div>
             <div class="container-fluid container-header">
                 <div class="col-md-4" style="margin-top: 20px;">
-                    <h1>Hello!</h1>
+                    <h2><u>Arts &amp; Crafts</u></h2>
                 </div>
             </div>
-            <div class="top-content wow fadeIn">
+            <div class="top-content wow fadeIn" style="margin-bottom: 30px;">
                 <div class="container-fluid">
                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner first-ree row w-100 mx-auto" role="listbox">
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3 active">
                                 <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
+                                <p>Meeting Title Here</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
                                 <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
+                                <p>Meeting Title Here</p>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
@@ -66,12 +113,12 @@
         </div>    
         
         <div>
-            <div class="container-fluid container-header">
+            <div class="container-fluid container-header" >
                 <div class="col-md-4" style="margin-top: 20px;">
-                    <h1>Hello!</h1>
+                    <h2><u>Music</u></h2>
                 </div>
             </div>
-            <div class="top-content wow fadeIn">
+            <div class="top-content wow fadeIn" style="margin-bottom: 30px;">
                 <div class="container-fluid">
                     <div id="carousel-example2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner second-ree row w-100 mx-auto" role="listbox">
@@ -114,12 +161,12 @@
         </div>
         
         <div>
-            <div class="container-fluid container-header">
+            <div class="container-fluid container-header" >
                 <div class="col-md-4" style="margin-top: 20px;">
-                    <h1>Hello!</h1>
+                    <h2><u>Fireside Chats</u></h2>
                 </div>
             </div>
-            <div class="top-content wow fadeIn">
+            <div class="top-content wow fadeIn" style="margin-bottom: 100px;">
                 <div class="container-fluid">
                     <div id="carousel-example3" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner third-ree row w-100 mx-auto" role="listbox">
