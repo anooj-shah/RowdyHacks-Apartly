@@ -2,8 +2,12 @@ import json
 from zoomus import ZoomClient
 from datetime import datetime
 import zoomus.util
-
+import os
 def setup():
+
+
+    client = ZoomClient(os.environ.get('ZOOM_ID'), os.environ.get('ZOOM_KEY'), version=1)
+
     user_list_response = client.user.list()
     user_list = json.loads(user_list_response.content)
     user_id = ''
