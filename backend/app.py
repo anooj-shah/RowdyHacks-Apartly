@@ -108,5 +108,5 @@ def create_meeting():
     print('One meeting scheduled: {0}'.format(result.inserted_id))
     return "<h1>Hello</h1>"
 # list_tags()
-if __name__ == __'main'__:
+if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
