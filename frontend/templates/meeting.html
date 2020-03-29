@@ -13,18 +13,17 @@
 <body>
     {% include 'navbar.html' %}
     <div class="container py-3">
-        <div class="title h1 text-center">Meeting for Cool Kids</div>
+        <div class="title h1 text-center">{{ answ.meeting_name }}</div>
         <!-- Card Start -->
         <div class="card">
           <div class="row ">
       
             <div class="col-md-7 px-3">
               <div class="card-block px-6">
-                <h4 class="card-title">Meeting for Cool Kids </h4>
+                <h4 class="card-title">{{ answ.meeting_name }}</h4>
                 <p class="card-text">
-                  The Carousel code can be replaced with an img src, no problem. The added CSS brings shadow to the card and some adjustments to the prev/next buttons and the indicators is rounded now. As in Bootstrap 3
+                  The current number of people attending is <b>{{ answ.num_people }} </b>
                 </p>
-                <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
                 <br>
                 <div class="better-hover">
                   <a href="#" class="mt-auto btn btn-primary lol ">Join The Meeting</a>
@@ -34,7 +33,7 @@
             </div>
             <!-- Carousel start -->
             <div class="col-md-5" style="padding: 10px !important;">
-            <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            <img class="d-block" src="https://www.studioknitsf.com/wp-content/uploads/2018/02/thumbnail_cableheart2-WEB-1-696x391.jpg" alt="">
             </div>
             <!-- End of carousel -->
           </div>

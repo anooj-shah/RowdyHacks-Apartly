@@ -2,10 +2,57 @@
 
 {% include 'header.html' %}
 {% set active_page = "create" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/c_animate.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/carousel1.css') }}">
 
 </head>
 <body>
     {% include 'navbar.html' %}
+<div class="wow fadeIn">
+        <div class="row" style="text-align: center; margin: 20px;">
+                <h2>Create Your Meeting</h2>
+                <p>Fill out the information below!</p>
+            </div>
+        <div class="row">
+            <div class="col-md-6 col-md-push-3">
+                <form action="" method=post>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="meeting" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="time" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="tags" class="form-control" placeholder="Tags">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="desc" class="form-control" id="" cols="30" rows="7" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" id="custId" name="custId" value="This card has happy birthday written on it with yellow, blue, and purple confetti around it on a dark purple background.">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="Submit" class="btn btn-primary btn-modify">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+<script src="{{ url_for('static', filename='js/carousel/jquery-3.3.1.min.js') }}"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/carousel/jquery.backstretch.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/carousel/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/carousel/scripts.js') }}"></script>
 
     {% include 'footer.html' %}
 </body>

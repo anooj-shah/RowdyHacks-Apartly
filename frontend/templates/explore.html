@@ -55,7 +55,6 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
         </div>
-
         <div>
             <div class="container-fluid container-header">
                 <div class="col-md-4" style="margin-top: 20px;">
@@ -67,36 +66,36 @@
                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner first-ree row w-100 mx-auto" role="listbox">
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3 active">
-                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.0.zoom_id }}"><img src="https://cdn.britannica.com/08/166508-050-12D5E894/origami-crane.jpg" class="img-fluid mx-auto d-block" alt="img1"></a>
+                                <p>{{ arts.0.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.1.zoom_id }}"><img src="https://media.timeout.com/images/105625350/630/472/image.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                <p>{{ arts.1.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.2.zoom_id }}"><img src="https://www.inquirer.com/resizer/A6d_kGVyTjdUqyHxvnTK-F-CUpc=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/APUFD4GMH5CUDLUC6K6H7E4JG4.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                <p>{{ arts.2.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.3.zoom_id }}"><img src="https://www.studioknitsf.com/wp-content/uploads/2018/02/thumbnail_cableheart2-WEB-1-696x391.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                                <p>{{ arts.3.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.0.zoom_id }}"><img src="https://cdn.britannica.com/08/166508-050-12D5E894/origami-crane.jpg" class="img-fluid mx-auto d-block" alt="img1"></a>
+                                <p>{{ arts.0.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.1.zoom_id }}"><img src="https://media.timeout.com/images/105625350/630/472/image.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                <p>{{ arts.1.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.2.zoom_id }}"><img src="https://www.inquirer.com/resizer/A6d_kGVyTjdUqyHxvnTK-F-CUpc=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/APUFD4GMH5CUDLUC6K6H7E4JG4.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                <p>{{ arts.2.meeting_name }}</p>
                             </div>
                             <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
-                                <p>Meeting Title Here</p>
+                                <a href="/meeting?id={{ arts.3.zoom_id }}"><img src="https://www.studioknitsf.com/wp-content/uploads/2018/02/thumbnail_cableheart2-WEB-1-696x391.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                                <p>{{ arts.3.meeting_name }}</p>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
@@ -111,7 +110,6 @@
                 </div>
             </div>
         </div>    
-        
         <div>
             <div class="container-fluid container-header" >
                 <div class="col-md-4" style="margin-top: 20px;">
@@ -123,29 +121,38 @@
                     <div id="carousel-example2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner second-ree row w-100 mx-auto" role="listbox">
                             <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3 active">
-                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                                <a href="/meeting?id={{ music.0.zoom_id }}"><img src="https://cdn.britannica.com/08/166508-050-12D5E894/origami-crane.jpg" class="img-fluid mx-auto d-block" alt="img1"></a>
+                                <p>{{ music.0.meeting_name }}</p>
                             </div>
                             <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
-                            </div>
+                                <a href="/meeting?id={{ music.1.zoom_id }}"><img src="https://www.montanabsa.org/wp-content/uploads/2014/02/071817_KMDay20073%E2%80%93W.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                    <p>{{ music.1.meeting_name }}</p>
+                                </div>
                             <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
-                            </div>
+                                <a href="/meeting?id={{ music.2.zoom_id }}"><img src="https://www.publicdomainpictures.net/pictures/230000/velka/piano-keyboard-cartoon-effect.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                    <p>{{ music.2.meeting_name }}</p>
+                                </div>
                             <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
+                                <a href="/meeting?id={{ music.3.zoom_id }}"><img src="https://media.npr.org/assets/img/2019/10/11/jazznight_wide-84b0822a7bee05759ccef8b496fcb5fbe4e7bec9-s800-c85.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                                 <p>{{ music.3.meeting_name }}</p>
+                        </div>
+                        <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="/meeting?id={{ music.0.zoom_id }}"><img src="https://cdn.britannica.com/08/166508-050-12D5E894/origami-crane.jpg" class="img-fluid mx-auto d-block" alt="img1"></a>
+                            <p>{{ music.0.meeting_name }}</p>
+                        </div>
+                        <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="/meeting?id={{ music.1.zoom_id }}"><img src="https://www.montanabsa.org/wp-content/uploads/2014/02/071817_KMDay20073%E2%80%93W.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                <p>{{ music.1.meeting_name }}</p>
                             </div>
-                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
+                        <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="/meeting?id={{ music.2.zoom_id }}"><img src="https://www.publicdomainpictures.net/pictures/230000/velka/piano-keyboard-cartoon-effect.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                <p>{{ music.2.meeting_name }}</p>
                             </div>
-                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
-                            </div>
-                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
-                            </div>
-                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
-                            </div>
+                        <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="/meeting?id={{ music.3.zoom_id }}"><img src="https://media.npr.org/assets/img/2019/10/11/jazznight_wide-84b0822a7bee05759ccef8b496fcb5fbe4e7bec9-s800-c85.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                             <p>{{ music.3.meeting_name }}</p>
+                    </div>
+                                                    
                         </div>
                         <a class="carousel-control-prev" href="#carousel-example2" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -171,30 +178,39 @@
                     <div id="carousel-example3" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner third-ree row w-100 mx-auto" role="listbox">
                             <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3 active">
-                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                                <a href="/meeting?id={{ music.0.zoom_id }}"><img src="https://irepo.primecp.com/2015/09/236970/Smores-on-the-Grill_ExtraLarge1000_ID-1195440.jpg?v=1195440" class="img-fluid mx-auto d-block" alt="img1"></a>
+                                <p>{{ fire.0.meeting_name }}</p>
                             </div>
                             <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
-                            </div>
+                                <a href="/meeting?id={{ music.1.zoom_id }}"><img src="https://townsquare.media/site/393/files/2019/03/GettyImages-1125476482.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                    <p>{{ fire.1.meeting_name }}</p>
+
+                                </div>
                             <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
-                            </div>
+                                <a href="/meeting?id={{ music.2.zoom_id }}"><img src="https://www.montanabsa.org/wp-content/uploads/2014/02/071817_KMDay20073%E2%80%93W.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                    <p>{{ fire.2.meeting_name }}</p>
+                                </div>
                             <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
-                            </div>
-                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
-                            </div>
-                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
-                            </div>
-                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
-                            </div>
-                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
-                            </div>
-                        </div>
+                                <a href="/meeting?id={{ music.3.zoom_id }}"><img src="https://www.inquirer.com/resizer/A6d_kGVyTjdUqyHxvnTK-F-CUpc=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/APUFD4GMH5CUDLUC6K6H7E4JG4.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                                    <p>{{ fire.3.meeting_name }}</p>
+                                </div>
+                                <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="/meeting?id={{ music.0.zoom_id }}"><img src="https://irepo.primecp.com/2015/09/236970/Smores-on-the-Grill_ExtraLarge1000_ID-1195440.jpg?v=1195440" class="img-fluid mx-auto d-block" alt="img1"></a>
+                                    <p>{{ fire.0.meeting_name }}</p>
+                                </div>
+                                <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="/meeting?id={{ music.1.zoom_id }}"><img src="https://townsquare.media/site/393/files/2019/03/GettyImages-1125476482.jpg" class="img-fluid mx-auto d-block" alt="img2"></a>
+                                        <p>{{ fire.1.meeting_name }}</p>
+    
+                                    </div>
+                                <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="/meeting?id={{ music.2.zoom_id }}"><img src="https://www.montanabsa.org/wp-content/uploads/2014/02/071817_KMDay20073%E2%80%93W.jpg" class="img-fluid mx-auto d-block" alt="img3"></a>
+                                        <p>{{ fire.2.meeting_name }}</p>
+                                    </div>
+                                <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="/meeting?id={{ music.3.zoom_id }}"><img src="https://www.inquirer.com/resizer/A6d_kGVyTjdUqyHxvnTK-F-CUpc=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/APUFD4GMH5CUDLUC6K6H7E4JG4.jpg" class="img-fluid mx-auto d-block" alt="img4"></a>
+                                        <p>{{ fire.3.meeting_name }}</p>
+                                    </div>
                         <a class="carousel-control-prev" href="#carousel-example3" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
