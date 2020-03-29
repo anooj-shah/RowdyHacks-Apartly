@@ -11,13 +11,17 @@ class LoginPage extends StatelessWidget {
 //  final prefs = await SharedPreferences.getInstance();
   void _handleTap() {}
 
-  Future<String> _handleLogin(String name, String Id) async {
+  Future<String> _handleLogin(BuildContext context, String name, String Id) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString('name', name);
-    await prefs.setString('Id', Id).then((value) => {
+    await prefs.setString('Id', Id).then((value) {
       //navigate to maiin page
+      print("Updatuuued");
+      Navigator.of(context).pushNamed('/HomePage');
 
     });
+    print("Updatuuued");
+    Navigator.of(context).pushNamed('/HomePage');
     return "Logged In";
   }
 
@@ -52,8 +56,11 @@ class LoginPage extends StatelessWidget {
                 title: 'Login',
 
                 logoTag: 'Getting it done',
-                onLogin: (data) async {
-                  return _handleLogin(data.name, data.password);
+                onLogin: (data)  {
+                  print("Updatuuued");
+                  Navigator.of(context).pushNamed('/HomePage');
+                  _handleLogin(context, data.name, data.password);
+                  return null;
                   // ignore: missing_return
                 },
                 // ignore: missing_return

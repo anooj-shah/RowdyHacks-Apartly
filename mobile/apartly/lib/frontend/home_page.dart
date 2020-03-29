@@ -1,10 +1,11 @@
 import 'package:apartly/models/apart_info.dart';
+import 'package:apartly/utilities/constants.dart';
+import 'package:apartly/widgets/event_card_widget.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
-
-
 
 class MyHome extends StatelessWidget {
   static List<TabItem> tabs = new List<TabItem>();
@@ -22,49 +23,55 @@ class MyHome extends StatelessWidget {
       ],
       child: Container(
         child: Scaffold(
-          appBar: AppBar(
-            title: Text('Apartly'),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.search, color: Colors.white,),
-              )
-            ],
-
-          ),
-          bottomNavigationBar: ConvexAppBar(
-            onTap: (ind) {
-              switch (ind) {
-                case 0:
-                  Navigator.of(context).canPop()
-                      ? Navigator.of(context).popAndPushNamed('/')
-                      : print('cant push');
-                  break;
-                case 1:
-                  Navigator.of(context).pushNamed('/ReportPage');
-                  break;
-                case 2:
-                //Navigator.of(context).canPop()
-                  Navigator.of(context).pushNamed('/ReportList');
-                  // : print('cant push');
-                  break;
-              }
-            },
-            items: tabs,
-            backgroundColor: Colors.red[600],
-            style: TabStyle.fixedCircle,
-          ),
+            appBar: AppBar(
+              title: AutoSizeText('Apartly',
+                  style: GoogleFonts.pacifico(
+                      textStyle: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 5,
+                  ))),
+              actions: <Widget>[
+                IconButton(
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                )
+              ],
+            ),
+            bottomNavigationBar: ConvexAppBar(
+              onTap: (ind) {
+                switch (ind) {
+                  case 0:
+                    Navigator.of(context).canPop()
+                        ? Navigator.of(context).popAndPushNamed('/')
+                        : print('cant push');
+                    break;
+                  case 1:
+                    Navigator.of(context).pushNamed('/ReportPage');
+                    break;
+                  case 2:
+                    //Navigator.of(context).canPop()
+                    Navigator.of(context).pushNamed('/ReportList');
+                    // : print('cant push');
+                    break;
+                }
+              },
+              items: tabs,
+              backgroundColor: Constants.themePurple,
+              style: TabStyle.fixedCircle,
+            ),
 //          appBar: AppBar(
-//            backgroundColor: Colors.deepOrange,
 //          ),
-          body: Stack(
-            children: <Widget>[
-//              MapView(),
-//              HomeFAB(),
-//              RefreshFAB(),
-//              DangerFAB(),
-            ],
-          ),
-        ),
+
+            body: new GridView.builder(
+                itemCount: 100,
+                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 1),
+                itemBuilder: (BuildContext context, int index) {
+                  return EventCard();
+                })),
       ),
     );
   }
