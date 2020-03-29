@@ -8,11 +8,10 @@
                 </div>
                 <div class="col-xs-9 text-right menu-1">
                     <ul>
-                        <li class="{{ 'active' if active_page == 'login' else 'hidden' }}"><a href="login">Login</a></li>
-                        <li class="{{ 'active' if active_page == 'explore' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="explore">Explore</a></li>
-                        <li class="{{ 'active' if active_page == 'create' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="create">Schedule</a>
+                        <li class="{{ 'active' if active_page == 'explore' else '' }}"><a href="explore">Explore</a></li>
+                        <li class="{{ 'active' if active_page == 'yeet' else '' }}"><a href="schedule">Schedule</a>
                         </li>
-                        <li class="{{ 'active' if active_page == 'about' else '' }} {{ 'hidden' if active_page == 'login' else '' }}"><a href="about">Profile</a></li>
+                        <li class="{{ 'active' if active_page == 'profile' else '' }}"><a href="profile">Profile</a></li>
                     </ul>
                 </div>
             </div>

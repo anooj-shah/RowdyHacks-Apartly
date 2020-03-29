@@ -19,4 +19,7 @@ dependencies: \
   /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Flutter/Flutter.framework/Headers/Flutter.h \
   /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/FLTPathProviderPlugin.h \
   /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Modules/module.modulemap \
-  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/shared_preferences/shared_preferences.framework/Headers/FLTSharedPreferencesPlugin.h \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/shared_preferences/shared_preferences.framework/Modules/module.modulemap \
+  /Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/build/ios/Debug-iphoneos/shared_preferences/shared_preferences.framework/Headers/shared_preferences-umbrella.h
