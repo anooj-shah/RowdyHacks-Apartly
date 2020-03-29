@@ -903,6 +903,26 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, .1);
+  box-shadow: none;
+   
+}
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 5;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  margin-top:20px;
+}
+
 .form-control:focus, .form-control:active {
   box-shadow: none;
   border: 2px solid rgba(0, 0, 0, 0.8);
