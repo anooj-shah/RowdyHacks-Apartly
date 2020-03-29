@@ -10,9 +10,7 @@ import random
 import json
 from datetime import datetime
 from zoom import zoom_create_meeting, zoom_list_meetings
-
 from bson.json_util import dumps
-
 
 client = pymongo.MongoClient('mongodb+srv://anooj101:rowdyhacks@cluster0-v8p0t.gcp.mongodb.net/test?retryWrites=true&w=majority')
 # database
@@ -22,7 +20,30 @@ db = client['rowdyhacks']
 meetings = db['meetings']
 users = db['users']
 
+
 app = Flask(__name__)
+
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    response = request.get_json()
+    username = response['username']
+    meetings_arr = []
+    user = {
+        'username': username,
+        'subscriptions': meetings_arr,
+    }
+    result = users.insert_one(user)
+    return "success"
+
+
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    response = request.get_json()
+    username = response['username']
+    zoom_id = response['zoom_id']
+    print(meetings.find_one({"zoom_id":zoom_id}))
+    return "success"
+
 
 @app.route('/list_tags', methods=['GET'])
 def list_tags():
@@ -38,8 +59,6 @@ def list_tags():
     return dumps(meetings_arr)
 
 @app.route('/list_meetings', methods=['GET'])
-
-
 def list_meetings():
     meetings_arr = dumps(list(meetings.find()))
 
