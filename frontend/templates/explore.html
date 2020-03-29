@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/c_animate.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel1.css') }}">
+
+        <title>Explore</title>
+
+        {% include 'header.html' %}
+        {% set active_page = "explore" %}
+
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        
+        <div>
+            <div class="container-fluid container-header">
+                <div class="col-md-4" style="margin-top: 20px;">
+                    <h1>Hello!</h1>
+                </div>
+            </div>
+            <div class="top-content wow fadeIn">
+                <div class="container-fluid">
+                    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner first-ree row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
+                            </div>
+                            <div class="carousel-item wheathins col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <div>
+            <div class="container-fluid container-header">
+                <div class="col-md-4" style="margin-top: 20px;">
+                    <h1>Hello!</h1>
+                </div>
+            </div>
+            <div class="top-content wow fadeIn">
+                <div class="container-fluid">
+                    <div id="carousel-example2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner second-ree row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
+                            </div>
+                            <div class="carousel-item asdfgh col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-example2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div class="container-fluid container-header">
+                <div class="col-md-4" style="margin-top: 20px;">
+                    <h1>Hello!</h1>
+                </div>
+            </div>
+            <div class="top-content wow fadeIn">
+                <div class="container-fluid">
+                    <div id="carousel-example3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner third-ree row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                <img src="{{ url_for('static', filename='images/backgrounds/1.jpg')}}" class="img-fluid mx-auto d-block" alt="img1">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/2.jpg')}}" class="img-fluid mx-auto d-block" alt="img2">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/3.jpg')}}" class="img-fluid mx-auto d-block" alt="img3">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/4.jpg')}}" class="img-fluid mx-auto d-block" alt="img4">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/5.jpg')}}" class="img-fluid mx-auto d-block" alt="img5">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/6.jpg')}}" class="img-fluid mx-auto d-block" alt="img6">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/7.jpg')}}" class="img-fluid mx-auto d-block" alt="img7">
+                            </div>
+                            <div class="carousel-item yeeters col-12 col-sm-6 col-md-4 col-lg-3">
+                                <img src="{{ url_for('static', filename='images/backgrounds/8.jpg')}}" class="img-fluid mx-auto d-block" alt="img8">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-example3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <script src="{{ url_for('static', filename='js/carousel/jquery-3.3.1.min.js') }}"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='js/carousel/jquery.backstretch.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/carousel/wow.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/carousel/scripts.js') }}"></script>
+    </body>
+</html>
