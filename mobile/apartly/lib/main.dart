@@ -22,13 +22,13 @@ class MyApp extends StatelessWidget {
         // When we navigate to the "/" route, build the MapView Screen
 //        '/ReportPage': (context) => ChangeNotifierProvider(
 //            create: (context) => FormInfo(), child: ReportPage()),
-//        '/ReportList': (context) => new ReportList(),
+        '/HomePage': (context) => new MyHome(),
       },
       theme: ThemeData(
-        primaryColor: Colors.red[600],
+        primaryColor: Constants.themePurple,
       ),
       // TODO: Add boolean using shared pref package to only show login once
-      home: LoginPage(),
+      home: MyHome(),
     );
   }
 }

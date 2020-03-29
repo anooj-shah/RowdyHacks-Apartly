@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.6 clang-1100.0.32.1)"
-options: "9e598ed424ea5d0689c3b1b9daf915f0"
-build_time: [1585454122, 837134000]
+options: "a29f6b3b3d99ec24c4bf289125759251"
+build_time: [1585462616, 841716000]
 inputs:
   "/Users/YoniZetune/Develop/rowdyHacks2020/mobile/apartly/ios/Runner/AppDelegate.swift": [1585439023, 726290891]
