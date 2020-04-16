@@ -1,5 +1,6 @@
 # RowdyHacks-Apartly
-###About Us
+UI/UX Winner
+### About Us
 Memebers (Discord username): 
 Yonathan Zetune (y00z#6248)
 Dylan Theriot (Doubled#7628)
